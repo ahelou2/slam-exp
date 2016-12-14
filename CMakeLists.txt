@@ -38,7 +38,7 @@ list(APPEND CMAKE_PREFIX_PATH
     "${DEPENDENCIES_PATH}/Install/ep_opencv"
 )
 
-find_package(OpenCV 2.4.3 REQUIRED)
+find_package(OpenCV REQUIRED)
 find_package(Eigen3 3.1.0 REQUIRED)
 find_package(Pangolin REQUIRED)
 

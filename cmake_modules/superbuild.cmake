@@ -27,12 +27,9 @@ ExternalProject_add(ep_eigen
         -DEIGEN_TEST_NO_OPENGL=ON
 )
 
-set(OPENCV_VERSION "2.4.13")
-set(OPENCV_MD5 "8feb45a71adad89b8017a777477c3eff")
+set(OPENCV_VERSION "3.1.1")
 ExternalProject_add(ep_opencv
-    URL "https://github.com/opencv/opencv/archive/${OPENCV_VERSION}.tar.gz"
-    URL_MD5 "8feb45a71adad89b8017a777477c3eff"
-    PATCH_COMMAND patch -p 1 -i "${PROJECT_SOURCE_DIR}/cmake_modules/opencv_${OPENCV_VERSION}.patch"
+    URL "https://github.com/ahelou2/opencv/archive/3.1.1.tar.gz"
     CMAKE_ARGS
         "-DCMAKE_BUILD_TYPE=${CMAKE_BUILD_TYPE}"
         "-DCMAKE_INSTALL_PREFIX=<INSTALL_DIR>"
