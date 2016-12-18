@@ -8,3 +8,8 @@ target/
 
 # Meta data of macOS Finder.app
 .DS_Store
+
+Vocabulary/
+datasets/
+dataset/
+lib/
