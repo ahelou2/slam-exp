@@ -10,6 +10,6 @@ target/
 .DS_Store
 
 Vocabulary/
-datasets/
-dataset/
+datasets/*
+!datasets/helpers/
 lib/
