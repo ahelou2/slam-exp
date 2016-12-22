@@ -29,7 +29,7 @@ ExternalProject_add(ep_eigen
 
 set(OPENCV_VERSION "3.1.1")
 ExternalProject_add(ep_opencv
-    URL "https://github.com/ahelou2/opencv/archive/3.1.1.tar.gz"
+    URL "https://github.com/ahelou2/opencv3-avfoundation/archive/3.1.1.tar.gz"
     CMAKE_ARGS
         "-DCMAKE_BUILD_TYPE=${CMAKE_BUILD_TYPE}"
         "-DCMAKE_INSTALL_PREFIX=<INSTALL_DIR>"
